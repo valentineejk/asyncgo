@@ -1,0 +1,20 @@
+
+# Go specific
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.prof
+*.pprof
+*.trace
+.cov
+.cover
+.coverprofile
+*.log
+.idea/
+.vscode/
+vendor/
+.envrc
