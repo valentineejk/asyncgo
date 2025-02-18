@@ -5,11 +5,12 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
-	_ "github.com/lib/pq"
 	"time"
+
+	_ "github.com/lib/pq"
 )
 
-func NewPostgres(cfg config.Config) (*sql.DB, error) {
+func NewPostgres(cfg *config.Config) (*sql.DB, error) {
 	dsn := cfg.DatabaseUrl()
 	db, err := sql.Open("postgres", dsn)
 	if err != nil {
